@@ -1,0 +1,113 @@
+.song_container {
+	width: 100%;
+	height: 6rem;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&:hover {
+		background-color: var(--dark-blue);
+	}
+
+	&:hover .left .play_btn {
+		svg {
+			color: var(--white) !important;
+		}
+	}
+
+	.left {
+		display: flex;
+		flex: 1;
+
+		.play_btn {
+			margin: 0 0.5rem;
+			svg {
+				width: 2rem;
+				height: 2rem;
+				color: var(--mini-black);
+			}
+		}
+
+		img {
+			width: 4rem;
+			height: 4rem;
+			object-fit: cover;
+		}
+		p {
+			font-size: 1.4rem;
+			font-weight: 500;
+			margin-left: 1rem;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: var(--mini-black) !important;
+		}
+	}
+	.center {
+		flex: 1;
+
+		p {
+			text-align: center;
+			font-size: 1.2rem;
+			margin: 0;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: var(--mini-black) !important;
+		}
+	}
+	.right {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		flex: 1;
+
+		p {
+			margin: 0 0.5rem 0 1rem;
+			font-size: 1.2rem;
+			color: var(--mini-black) !important;
+		}
+
+		.menu_btn {
+			svg {
+				width: 2rem;
+				height: 2rem;
+				color: var(--mini-black);
+			}
+		}
+
+		.lyrics {
+			color: var(--dark-blue);
+			width: 2.2rem;
+			height: 2.2rem;
+		}
+	}
+
+	&:hover .left p {
+		color: white !important;
+	}
+
+	&:hover .right .menu_btn {
+		svg {
+			color: white !important;
+		}
+	}
+
+	&:hover .right .lyrics {
+		color: white !important;
+	}
+
+	&:hover .center p {
+		color: white !important;
+	}
+
+	&:hover .right p {
+		color: white !important;
+	}
+}

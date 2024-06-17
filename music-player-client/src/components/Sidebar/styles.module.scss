@@ -1,0 +1,93 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 24rem;
+	height: 100vh;
+	background: var(--white);
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem;
+	z-index: 100;
+	border-right: 1px solid var(--border-color);
+
+
+	.progress_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 10rem;
+	}
+
+	.logo_img {
+		width: 14rem;
+		margin: 2.5rem;
+		height: auto;
+	}
+
+	.menu_link {
+		color: var(--light-white);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.6rem 0;
+		border-radius: 0.2rem;
+		margin-bottom: 1rem;
+		transition: all 0.5s;
+
+		&:hover > * {
+			fill: var(--primary);
+			color: var(--primary);
+		}
+
+		svg {
+			fill: var(--light-blue);
+			flex: 30%;
+		}
+
+		span {
+			width: 100%;
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: var(--dark-blue);
+			text-align: left;
+			flex: 70%;
+		}
+
+	}
+
+	.underline {
+		width: 90%;
+		margin: 1rem 5%;
+		height: 0.1rem;
+		background-color: var(--border-color);
+	}
+
+	.active_menu {
+		color: var(--white);
+
+		svg {
+			fill: var(--primary);
+		}
+
+		span {
+			color: var(--primary);
+		}
+	}
+
+	.active_link {
+		color: var(--primary);
+	}
+
+	.playlist_link {
+		color: var(--light-blue);
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin-left: 7rem;
+		margin-bottom: 1rem;
+
+		&:hover {
+			color: var(--primary);
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.container {
+	padding: 6rem 0 10rem 26rem;
+	color: '#ffffff';
+	min-height: calc(100vh - 6rem);
+
+	.progress_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		height: 80vh;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+pre {
+	font-weight: normal;
+	text-align: center;
+}

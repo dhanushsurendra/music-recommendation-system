@@ -1,0 +1,14 @@
+.playButton {
+    top: 55%;
+    right: 15%;
+    background-color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    padding: .8rem;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}

@@ -1,0 +1,36 @@
+.container {
+	width: calc(100% - 5rem);
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	display: flex;
+}
+
+.horizontal {
+	display: flex;
+}
+
+.div1,
+.div2 {
+	width: 100% !important;
+	height: 100%;
+	padding: 5rem;
+}
+
+.div3 {
+	width: 100% !important;
+	margin: 3rem;
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
+	margin: 0 0 2rem 0rem;
+
+	svg {
+		width: 3rem;
+		height: 3rem;
+		margin-left: 0.5rem;
+	}
+}

@@ -1,0 +1,32 @@
+.section {
+	width: 100%;
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 2rem;
+	background-color: var(--white);
+	margin: 2rem;
+}
+
+.sectionContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+@media (min-width: 600px) {
+	.sectionContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 900px) {
+	.sectionContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1600px) {
+	.sectionContainer {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
